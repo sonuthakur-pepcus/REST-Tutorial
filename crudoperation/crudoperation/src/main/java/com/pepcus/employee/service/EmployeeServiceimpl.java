@@ -16,10 +16,12 @@ public class EmployeeServiceimpl  {
 	 private EmployeeRepositoy employeeRepositoy;
 	 @Autowired
      private AddressRepository addressRepository;
+  private EmployeeServiceimpl employeeRepository;
 	 
 	public Employee addemployee(Employee employee) {
+		      employeeRepositoy.save(employee);
 		addressRepository.saveAll(employee.getAddress());
-		return employeeRepositoy.save(employee);
+		return employee;
 	}
 
 	
@@ -49,6 +51,13 @@ public class EmployeeServiceimpl  {
 	     
 		return employeeRepositoy.findAllOrderByNameAsc();
 	}
+
+
+  public List<Employee> findByName(String name) {
+ 
+    return employeeRepository.findByName(name);
+  }
+	
 	
 } 
 
