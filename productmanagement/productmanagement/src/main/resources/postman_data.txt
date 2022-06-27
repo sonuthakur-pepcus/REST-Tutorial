@@ -1,0 +1,48 @@
+add new product jason formate for post mapping
+{
+    "name":"tshirt",
+    "cost":"1100",
+    "date" : "2021-05-10",
+   "departmentId":"2" 
+}
+================================================
+get last year add product data 
+[
+    {
+        "id": 14,
+        "name": "tshirt",
+        "cost": 1100,
+        "date": "2021-05-10T00:00:00.000+00:00",
+        "departmentId": 2
+    }
+]
+===================================================
+update product cost jasson array
+[
+    {
+        "id" : "13",
+        "cost" : "350"
+    },
+    {
+        "id" : "14",
+        "cost" : "1350"
+    }
+]
+==========================================
+get product from department id
+[
+    {
+        "id": 13,
+        "name": "shirt",
+        "cost": 350,
+        "date": "1970-01-20T04:01:16.917+00:00",
+        "departmentId": 2
+    },
+    {
+        "id": 14,
+        "name": "tshirt",
+        "cost": 1350,
+        "date": "2021-05-10T00:00:00.000+00:00",
+        "departmentId": 2
+    }
+]
